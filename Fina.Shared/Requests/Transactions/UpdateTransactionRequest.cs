@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 namespace Fina.Shared.Requests.Transactions;
 public class UpdateTransactionRequest : Request
 {
+    public long Id { get; set; }
+
     [Required(ErrorMessage = "Título inválido")]
     public string Title { get; set; } = string.Empty;
 
