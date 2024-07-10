@@ -22,7 +22,7 @@ public class GetAllCategoryEndpoint : IEndpoint
                                                    [FromQuery] int pageNumber = Configuration.DefaultPageNumber,
                                                    [FromQuery] int pageSize = Configuration.DefaultPageSize)
     {
-        var request = new GetAllCategoryRequest
+        var request = new GetAllCategoriesRequest
         {
             UserId = ApiConfiguration.UserId,
             PageNumber = pageNumber,

@@ -9,5 +9,6 @@ public class CreateCategoryRequest : Request
     public string Title { get; set; } = string.Empty;
 
     [Required(ErrorMessage = "Descrição inválida")]
+    [MinLength(1, ErrorMessage ="Descriçã")]
     public string Description { get; set; } = string.Empty;
 }

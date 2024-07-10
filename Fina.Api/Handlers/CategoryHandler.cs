@@ -56,7 +56,7 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
         }
     }
 
-    public async Task<PagedResponse<List<Category>?>> GetAllAsync(GetAllCategoryRequest request)
+    public async Task<PagedResponse<List<Category>?>> GetAllAsync(GetAllCategoriesRequest request)
     {
         try
         {
